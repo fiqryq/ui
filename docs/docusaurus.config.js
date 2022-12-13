@@ -10,8 +10,8 @@ const config = {
   tagline: 'react tailwind ui kit',
   url: 'https://ui.fiqry.dev',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: 'ignore',
+  onBrokenMarkdownLinks: 'ignore',
   favicon: '/img/favicon.ico',
 
   // GitHub pages deployment config.
