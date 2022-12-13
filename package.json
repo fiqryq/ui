@@ -3,6 +3,11 @@
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
+  "workspaces": {
+    "docs": [
+      "docs/*"
+    ]
+  },
   "files": [
     "dist",
     "src"
@@ -13,6 +18,8 @@
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
+    "docs": "cd docs && yarn run start",
+    "docs:build": "cd docs && yarn run build",
     "test": "tsdx test --passWithNoTests",
     "prepare": "tsdx build",
     "size": "size-limit",
