@@ -1,41 +1,38 @@
-# Website
+# Syntax
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+Syntax is a [Tailwind UI](https://tailwindui.com) site template built using [Tailwind CSS](https://tailwindcss.com) and [Next.js](https://nextjs.org).
 
-### Installation
+## Getting started
 
-```
-$ yarn
-```
+To get started with this template, first install the npm dependencies:
 
-### Local Development
-
-```
-$ yarn start
+```bash
+npm install
+cp .env.example .env.local
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+Next, run the development server:
 
-### Build
-
-```
-$ yarn build
+```bash
+npm run dev
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+Finally, open [http://localhost:3000](http://localhost:3000) in your browser to view the website.
 
-### Deployment
+## Customizing
 
-Using SSH:
+You can start editing this template by modifying the files in the `/src` folder. The site will auto-update as you edit these files.
 
-```
-$ USE_SSH=true yarn deploy
-```
+## License
 
-Not using SSH:
+This site template is a commercial product and is licensed under the [Tailwind UI license](https://tailwindui.com/license).
 
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
+## Learn more
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+To learn more about the technologies used in this site template, see the following resources:
+
+- [Tailwind CSS](https://tailwindcss.com/docs) - the official Tailwind CSS documentation
+- [Next.js](https://nextjs.org/docs) - the official Next.js documentation
+- [Headless UI](https://headlessui.dev) - the official Headless UI documentation
+- [Markdoc](https://markdoc.io) - the official Markdoc documentation
+- [DocSearch](https://docsearch.algolia.com) - the official DocSearch documentation
