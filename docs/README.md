@@ -1,3 +1,1 @@
-/.next/
-
 # Readme
