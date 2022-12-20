@@ -51,11 +51,9 @@
     "@size-limit/preset-small-lib": "^8.0.1",
     "@types/react": "^18.0.18",
     "@types/react-dom": "^18.0.6",
-    "motion": "^10.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "size-limit": "^8.0.1",
-    "swr": "^2.0.0",
     "tsdx": "^0.14.1",
     "tslib": "^2.4.0",
     "typescript": "^4.9.4"
