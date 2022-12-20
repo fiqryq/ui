@@ -1,8 +1,16 @@
-import fetcher from "@/lib/fetcher"
-import { NowPlayingSong } from "@/types/NowPlaying"
-import { AnimatedBars } from "@/src/components/spotify/ui/AnimatedBars"
+import fetcher from "../lib/fetcher"
+import { AnimatedBars } from "./AnimatedBars"
 import React from "react"
 import useSWR from 'swr'
+
+type NowPlayingSong = {
+    album: string
+    albumImageUrl: string
+    artist: string
+    isPlaying: boolean
+    songUrl: string
+    title: string
+}
 
 export const NowPlaying = () => {
     const { data } = useSWR<NowPlayingSong>('/api/now-playing', fetcher)

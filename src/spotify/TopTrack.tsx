@@ -1,10 +1,17 @@
-
-
-import fetcher from '@/src/lib/fetcher'
-import { TopTracks } from '@/types/TopTracks'
-import React from 'react'
+import React from "react"
+import { Track } from "./Track"
 import useSWR from 'swr'
-import { Track } from '@/components/spotify/ui/Track'
+import fetcher from "../lib/fetcher"
+
+type Song = {
+    songUrl: string
+    artist: string
+    title: string
+}
+
+type TopTracks = {
+    tracks: Song[]
+}
 
 export default function Tracks() {
     const { data } = useSWR<TopTracks>('/api/top-tracks', fetcher)
