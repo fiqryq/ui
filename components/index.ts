@@ -1,1 +1,2 @@
-export * from './text'
+export * from '@/components/text'
+export * from '@/components/layout'
