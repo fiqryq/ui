@@ -1,6 +1,6 @@
 {
   "include": [
-    "src/",
+    "components/",
   ],
   "compilerOptions": {
     "module": "esnext",
@@ -11,7 +11,7 @@
     "importHelpers": true,
     "declaration": true,
     "sourceMap": true,
-    "rootDir": "./src",
+    "rootDir": "./components",
     "strict": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
@@ -25,9 +25,9 @@
     "noEmit": true,
     "baseUrl": ".",
     "paths": {
-      "src/*": [
-        "src/*"
-      ],
-    }
+      "@/*": [
+        "*"
+      ]
+    },
   }
 }
