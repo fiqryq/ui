@@ -66,8 +66,9 @@ function Header({ navigation }) {
         <MobileNavigation navigation={navigation} />
       </div>
       <div className="relative flex flex-grow basis-0 items-center">
-        <Link href="/" className='text-xl font-bold' aria-label="Home page">
-          piqUI <span className="inline-block py-1.5 px-2.5 leading-none text-[10px] text-center whitespace-nowrap align-baseline font-bold bg-red-400 text-white rounded">Beta</span>
+        <Link href="/" className='text-xl font-bold flex items-center space-x-2' aria-label="Home page">
+          <span>PIQUI</span>
+          <span className="inline-block py-1 px-2.5 leading-none text-[10px] text-center whitespace-nowrap align-baseline font-bold bg-red-400 text-white rounded">Beta</span>
         </Link>
       </div>
       <div className="-my-5 mr-6 sm:mr-8 md:mr-0">
